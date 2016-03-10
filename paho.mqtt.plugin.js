@@ -114,8 +114,8 @@
 			data = {};
 			currentSettings = newSettings;
 			client.connect({onSuccess:onConnect,
-							userName: currentSettings.username,
-							password: currentSettings.password,
+							//userName: currentSettings.username,
+							//password: currentSettings.password,
 							useSSL: currentSettings.use_ssl});
 		}
 
@@ -141,8 +141,8 @@
 		client.onMessageArrived = onMessageArrived;
 		client.connect({onSuccess:onConnect, 
 						
-						userName: currentSettings.username,
-						password: currentSettings.password,
+						//userName: currentSettings.username,
+						//password: currentSettings.password,
 						useSSL: currentSettings.use_ssl});
 	}
 }());
